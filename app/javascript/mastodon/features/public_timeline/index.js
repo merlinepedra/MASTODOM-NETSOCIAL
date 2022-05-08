@@ -29,8 +29,6 @@ const mapStateToProps = (state, { columnId }) => {
   };
 };
 
-export default @connect(mapStateToProps)
-@injectIntl
 class PublicTimeline extends React.PureComponent {
 
   static contextTypes = {
@@ -136,3 +134,5 @@ class PublicTimeline extends React.PureComponent {
   }
 
 }
+
+export default connect(mapStateToProps)(injectIntl(PublicTimeline));

@@ -15,7 +15,6 @@ const mapStateToProps = (state, props) => ({
   hasUnread: state.getIn(['timelines', `hashtag:${props.params.id}${props.params.local ? ':local' : ''}`, 'unread']) > 0,
 });
 
-export default @connect(mapStateToProps)
 class HashtagTimeline extends React.PureComponent {
 
   disconnects = [];
@@ -162,3 +161,5 @@ class HashtagTimeline extends React.PureComponent {
   }
 
 }
+
+export default connect(mapStateToProps)(HashtagTimeline);

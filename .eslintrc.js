@@ -24,10 +24,14 @@ module.exports = {
   parserOptions: {
     sourceType: 'module',
     ecmaFeatures: {
-      experimentalObjectRestSpread: true,
       jsx: true,
     },
     ecmaVersion: 2021,
+    requireConfigFile: false,
+    babelOptions: {
+      configFile: false,
+      presets: ['@babel/react', '@babel/env'],
+    },
   },
 
   settings: {
@@ -211,4 +215,18 @@ module.exports = {
       },
     ],
   },
+
+  overrides: [
+    {
+      files: ['*.config.js', '.eslintrc.js', 'ide-helper.js'],
+
+      env: {
+        commonjs: true,
+      },
+
+      parserOptions: {
+        sourceType: 'script',
+      },
+    },
+  ],
 };

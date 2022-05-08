@@ -20,7 +20,6 @@ const messages = defineMessages({
 const TICK_SIZE = 10;
 const PADDING   = 180;
 
-export default @injectIntl
 class Audio extends React.PureComponent {
 
   static propTypes = {
@@ -519,3 +518,5 @@ class Audio extends React.PureComponent {
   }
 
 }
+
+export default injectIntl(Audio);

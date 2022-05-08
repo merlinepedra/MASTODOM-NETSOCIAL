@@ -11,8 +11,6 @@ const mapStateToProps = state => ({
   count: state.getIn(['user_lists', 'follow_requests', 'items'], ImmutableList()).size,
 });
 
-export default @withRouter
-@connect(mapStateToProps)
 class FollowRequestsNavLink extends React.Component {
 
   static propTypes = {
@@ -37,3 +35,5 @@ class FollowRequestsNavLink extends React.Component {
   }
 
 }
+
+export default withRouter(connect(mapStateToProps)(FollowRequestsNavLink));

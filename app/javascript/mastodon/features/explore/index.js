@@ -22,8 +22,6 @@ const mapStateToProps = state => ({
   isSearching: state.getIn(['search', 'submitted']),
 });
 
-export default @connect(mapStateToProps)
-@injectIntl
 class Explore extends React.PureComponent {
 
   static contextTypes = {
@@ -89,3 +87,5 @@ class Explore extends React.PureComponent {
   }
 
 }
+
+export default connect(mapStateToProps)(injectIntl(Explore));

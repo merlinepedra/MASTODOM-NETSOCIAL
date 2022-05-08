@@ -19,7 +19,6 @@ const mapStateToProps = (state, { local }) => {
   };
 };
 
-export default @connect(mapStateToProps)
 class PublicTimeline extends React.PureComponent {
 
   static propTypes = {
@@ -97,3 +96,5 @@ class PublicTimeline extends React.PureComponent {
   }
 
 }
+
+export default connect(mapStateToProps)(PublicTimeline);

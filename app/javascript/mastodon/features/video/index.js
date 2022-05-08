@@ -94,7 +94,6 @@ export const fileNameFromURL = str => {
   return pathname.slice(index + 1);
 };
 
-export default @injectIntl
 class Video extends React.PureComponent {
 
   static propTypes = {
@@ -652,3 +651,5 @@ class Video extends React.PureComponent {
   }
 
 }
+
+export default injectIntl(Video);

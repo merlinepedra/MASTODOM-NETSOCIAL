@@ -356,7 +356,6 @@ class Announcement extends ImmutablePureComponent {
 
 }
 
-export default @injectIntl
 class Announcements extends ImmutablePureComponent {
 
   static propTypes = {
@@ -448,3 +447,5 @@ class Announcements extends ImmutablePureComponent {
   }
 
 }
+
+export default injectIntl(Announcements);

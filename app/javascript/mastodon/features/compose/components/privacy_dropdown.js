@@ -148,7 +148,6 @@ class PrivacyDropdownMenu extends React.PureComponent {
 
 }
 
-export default @injectIntl
 class PrivacyDropdown extends React.PureComponent {
 
   static propTypes = {
@@ -286,3 +285,5 @@ class PrivacyDropdown extends React.PureComponent {
   }
 
 }
+
+export default injectIntl(PrivacyDropdown);

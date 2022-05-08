@@ -28,8 +28,6 @@ const mapStateToProps = state => ({
   domain: state.getIn(['meta', 'domain']),
 });
 
-export default @connect(mapStateToProps)
-@injectIntl
 class Directory extends React.PureComponent {
 
   static contextTypes = {
@@ -170,3 +168,5 @@ class Directory extends React.PureComponent {
   }
 
 }
+
+export default connect(mapStateToProps)(injectIntl(Directory));

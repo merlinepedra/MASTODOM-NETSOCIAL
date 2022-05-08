@@ -55,7 +55,6 @@ RemoteHint.propTypes = {
   url: PropTypes.string.isRequired,
 };
 
-export default @connect(mapStateToProps)
 class AccountTimeline extends ImmutablePureComponent {
 
   static propTypes = {
@@ -192,3 +191,5 @@ class AccountTimeline extends ImmutablePureComponent {
   }
 
 }
+
+export default connect(mapStateToProps)(AccountTimeline);

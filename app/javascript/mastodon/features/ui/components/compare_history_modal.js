@@ -23,7 +23,6 @@ const mapDispatchToProps = dispatch => ({
 
 });
 
-export default @connect(mapStateToProps, mapDispatchToProps)
 class CompareHistoryModal extends React.PureComponent {
 
   static propTypes = {
@@ -97,3 +96,5 @@ class CompareHistoryModal extends React.PureComponent {
   }
 
 }
+
+export default connect(mapStateToProps, mapDispatchToProps)(CompareHistoryModal);

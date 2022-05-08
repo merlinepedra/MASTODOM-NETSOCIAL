@@ -91,7 +91,6 @@ const normalizeWheel = event => {
   };
 };
 
-export default @injectIntl
 class ZoomableImage extends React.PureComponent {
 
   static propTypes = {
@@ -448,3 +447,5 @@ class ZoomableImage extends React.PureComponent {
   }
 
 }
+
+export default injectIntl(ZoomableImage);

@@ -24,8 +24,6 @@ export function getLink (index) {
   return links[index].props.to;
 }
 
-export default @injectIntl
-@withRouter
 class TabsBar extends React.PureComponent {
 
   static propTypes = {
@@ -84,3 +82,5 @@ class TabsBar extends React.PureComponent {
   }
 
 }
+
+export default injectIntl(withRouter(TabsBar));
