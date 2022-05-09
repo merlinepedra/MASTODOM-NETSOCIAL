@@ -4,7 +4,7 @@ RSS::Builder.build do |doc|
   doc.link(tag_url(@tag))
   doc.last_build_date(@statuses.first.created_at) if @statuses.any?
   doc.icon(full_asset_url(@account.avatar.url(:original)))
-  doc.logo(full_pack_url('media/images/logo_transparent_white.svg'))
+  doc.logo(full_pack_url('static/logo_transparent_white.svg'))
   doc.generator("Mastodon v#{Mastodon::Version.to_s}")
 
   @statuses.each do |status|
