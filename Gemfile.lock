@@ -292,7 +292,7 @@ GEM
     hkdf (0.3.0)
     html_tokenizer (0.0.7)
     htmlentities (4.3.4)
-    http (5.1.0)
+    http (5.1.1)
       addressable (~> 2.8)
       http-cookie (~> 1.0)
       http-form_data (~> 2.2)
