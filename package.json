@@ -158,7 +158,7 @@
     "stylelint": "^14.9.1",
     "stylelint-config-standard-scss": "^4.0.0",
     "webpack-dev-server": "^3.11.3",
-    "yargs": "^17.5.1"
+    "yargs": "^17.7.0"
   },
   "resolutions": {
     "kind-of": "^6.0.3"
